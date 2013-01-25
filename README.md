@@ -1,41 +1,46 @@
 heroku-php-extension-imagick
 ================
 
-Compiled a few library for Heroku's PHP extension - imagick.so
+Compiled a few library for Heroku's PHP extension - __imagick.so__
 
-And Setting for local development environment.
+And Setting for local development environment. - __php_imagick.dll__
 
+
+
+Instruction for 'imagick.so': 
 ----------------------------
-# for Heroku
-Instruction for 'imagick.so':
-----------------------------
+for Heroku
 
-1.  create folder "ext" in project folder
+1.  create folder __ext__ in project folder
 
-2.  put "imagick.so" in "ext" folder
+2.  put __imagick.so__ in __ext__ folder
 
-3.  create file "php.ini" in main folder of project
+3.  create file __php.ini__ in main folder of project
 
-4.  Add this line to "php.ini" 
-	extension=/app/www/ext/imagick.so
+4.  Add this line to __php.ini__ 
+<PRE>
+extension=/app/www/ext/imagick.so
+</PRE>
   
-5.  $ git add php.ini ext/imagick.so
+5.  $ __git add php.ini ext/imagick.so__
 
-6.  $ git commit -m "PHP's imagemagick library"
+6.  $ __git commit -m "PHP's imagemagick library"__
 
-7.  $ git push heroku master
+7.  $ __git push heroku master__
 
 
-----------------------------
-# for Local development
+
 Instruction for 'php_imagick.dll':
 ----------------------------
+for Local development
 
-1.  open file "php.ini" in local php folder
+1.  open file __php.ini__ in local php folder
 
-2.  Add this line to "php.ini"
-	extension=php_imagick.dll
+2.  Add this line to __php.ini__
+<PRE>
+extension=php_imagick.dll
+</PRE>
 
-3.  put "php_imagick.dll" in local PHP's "ext" folder
+3.  put __php_imagick.dll__ in local PHP's __ext__ folder
 
 4.  restart local apache server
