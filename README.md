@@ -6,8 +6,8 @@ Compiled a few library for Heroku's PHP extension - imagick.so
 And Setting for local development environment.
 
 ----------------------------
-Instruction for 'imagick.so':
 # for Heroku
+Instruction for 'imagick.so':
 ----------------------------
 
 1.  create folder "ext" in project folder
@@ -27,8 +27,8 @@ Instruction for 'imagick.so':
 
 
 ----------------------------
-Instruction for 'php_imagick.dll':
 # for Local development
+Instruction for 'php_imagick.dll':
 ----------------------------
 
 1.  open file "php.ini" in local php folder
@@ -36,6 +36,6 @@ Instruction for 'php_imagick.dll':
 2.  Add this line to "php.ini"
 	extension=php_imagick.dll
 
-3.  put "imagick.so" in local PHP's "ext" folder
+3.  put "php_imagick.dll" in local PHP's "ext" folder
 
 4.  restart local apache server
